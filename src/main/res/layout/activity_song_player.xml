@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SongPlayer">
+
+    <TextView
+        android:id="@+id/song_details_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_sides_margin"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="@dimen/default_sides_margin"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:layout_weight="0"
+        android:contentDescription="@string/song_header_playing_now"
+        android:text="@string/playing_now_example_description"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <TextView
+        android:id="@+id/song_details_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_sides_margin"
+        android:layout_marginRight="@dimen/default_sides_margin"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:layout_weight="0"
+        android:contentDescription="@string/song_title_and_artist"
+        android:text="@string/title_artist_default"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+    <ImageView
+        android:id="@+id/music_cover_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_sides_margin"
+        android:layout_marginRight="@dimen/default_sides_margin"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:layout_weight="2"
+        android:contentDescription="@string/music_cover_artwork"
+        android:src="@drawable/ic_music_icon"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_sides_margin"
+        android:layout_marginRight="@dimen/default_sides_margin"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/current_playing_time_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:contentDescription="@string/song_start_time"
+            android:text="@string/example_start_time" />
+
+        <SeekBar
+            android:id="@+id/current_playing_time_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="99" />
+
+        <TextView
+            android:id="@+id/end_music_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/example_end_time" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/start_stop_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_sides_margin"
+        android:layout_marginRight="@dimen/default_sides_margin"
+        android:layout_marginBottom="@dimen/default_bottom_margin"
+        android:layout_weight="1"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/start_stop_button_description"
+        android:onClick="pausePlayAction"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_play_action" />
+
+</LinearLayout>

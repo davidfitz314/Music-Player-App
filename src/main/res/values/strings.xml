@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MusicPlayerPreview</string>
+    <string name="playing_now_example_description">Playing Now</string>
+    <string name="title_artist_default">\"Title\", Artist</string>
+    <string name="music_cover_artwork">Music Cover Artwork</string>
+    <string name="song_title_and_artist">Song Title and Artist</string>
+    <string name="song_header_playing_now">Song Header Playing Now</string>
+    <string name="song_start_time">Song Start Time</string>
+    <string name="example_end_time">-2:33</string>
+    <string name="example_start_time">0:00</string>
+    <string name="start_stop_button_description">start stop button</string>
+    <string name="temp_title_artist_text">\"Solitaire\" by The Carpenters</string>
+    <string name="play_song_button_label">Play Song</string>
+    <string name="title_header">Title:</string>
+    <string name="title_header_description">title header description</string>
+    <string name="temp_title">temp title</string>
+    <string name="temp_artist_holder">artist</string>
+    <string name="artist_header">Artist:</string>
+    <string name="artist_header_content_description">artist header</string>
+    <string name="artist_label_content_description">artist label</string>
+    <string name="title_label_content_description">title label</string>
+</resources>

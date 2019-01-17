@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding_list_items">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/title_header_style"
+                android:text="@string/title_header" />
+
+            <TextView
+                android:id="@+id/song_title_display"
+                style="@style/list_item_style"
+                android:contentDescription="@string/title_label_content_description"
+                android:text="@string/temp_title" />
+        </LinearLayout>
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/artist_header_style"
+                android:text="@string/artist_header" />
+
+            <TextView
+                android:id="@+id/song_artist_display"
+                style="@style/list_item_style"
+                android:contentDescription="@string/artist_label_content_description"
+                android:text="@string/temp_artist_holder" />
+        </LinearLayout>
+-->
+    </LinearLayout>
+</android.support.v7.widget.CardView>

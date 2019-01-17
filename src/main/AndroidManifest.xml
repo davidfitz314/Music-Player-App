@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.musicplayerpreview">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_music_player_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_music_player_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:label="Music Player" android:icon="@drawable/ic_music_note">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SongPlayer" android:parentActivityName=".MainActivity" android:label="" android:icon="@drawable/ic_music_note" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

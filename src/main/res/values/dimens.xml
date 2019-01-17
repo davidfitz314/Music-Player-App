@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_sides_margin">16dp</dimen>
+    <dimen name="default_bottom_margin">16dp</dimen>
+    <dimen name="default_padding_list_items">8dp</dimen>
+    <dimen name="header_text_size_default">16sp</dimen>
+    <dimen name="list_item_default_text_size">14sp</dimen>
+</resources>
